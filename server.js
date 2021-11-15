@@ -1,3 +1,7 @@
+//npm install --save mysql2
+//npm i sequelize {These two packages are necessary to connect with Express.js API}
+//npm install dotenv {To load environment variables from a .env file into process.env}
+
 const express = require("express");
 const routs = require("./routes");
 
