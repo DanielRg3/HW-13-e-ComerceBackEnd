@@ -39,7 +39,7 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Category,
-        attributes: ['cateogry_name']
+        attributes: ['category_name']
       },
       {
         model: Tag,

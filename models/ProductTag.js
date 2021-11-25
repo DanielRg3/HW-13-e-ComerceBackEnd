@@ -1,5 +1,5 @@
-//const database = require('mime-db');
-//const { Tag } = require('.');
+const database = require('mime-db');
+//const { Tag } = require('./index');
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -16,14 +16,14 @@ ProductTag.init(
     product_id: {
       type: DataTypes.INTEGER,
       references: {
-        modle: 'product',
+        model: 'product',
         key: 'id',
       }
     },
     tag_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: Tag,
+        model: 'tag',
         key: 'id',
       }
     }
